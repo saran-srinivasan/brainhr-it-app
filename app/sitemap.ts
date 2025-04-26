@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 
+export const dynamic = "force-static"; // Ensures the route is statically exported
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.brainhritsolutions.com/";
 
