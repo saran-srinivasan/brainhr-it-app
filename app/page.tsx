@@ -130,8 +130,9 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <SectionHeading
             title="About BrainHR IT Solutions"
-            subtitle="We bridge the gap between exceptional talent and industry-leading software companies."
+            subtitle="We take the pleasure to introduce ourselves to you as a leading Software consultancy firm catering to the Staffing needs of various prestigious software companies in INDIA, and a few reputed overseas clients within US."
             centered
+            className="flex flex-col items-center"
           />
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">
@@ -178,11 +179,14 @@ export default function Home() {
             title="Our Services"
             subtitle="Comprehensive staffing solutions tailored to meet the unique needs of software companies."
             centered
+            className="flex flex-col items-center"
           />
 
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="border rounded-lg p-6 hover:shadow-md transition-shadow">
-              <h3 className="text-xl font-bold mb-4">Contract Staffing</h3>
+              <h3 className="text-xl font-bold mb-4">
+                Resource Strategy & Staffing
+              </h3>
               <p className="text-muted-foreground mb-4">
                 Flexible staffing solutions for project-based needs, providing
                 skilled professionals for short to long-term assignments.
@@ -210,26 +214,57 @@ export default function Home() {
             </div>
 
             <div className="border rounded-lg p-6 hover:shadow-md transition-shadow">
-              <h3 className="text-xl font-bold mb-4">Permanent Placement</h3>
+              <h3 className="text-xl font-bold mb-4">
+                Software Projects - Mobile and Web Applications
+              </h3>
               <p className="text-muted-foreground mb-4">
-                Strategic recruitment services to identify and secure top-tier
-                talent for full-time positions within your organization.
+                End-to-end software development services for mobile and web
+                applications, from concept to deployment.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Thorough candidate screening</span>
+                  <span>Agile development methodologies</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Cultural fit assessment</span>
+                  <span>Cross-platform solutions</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Long-term retention focus</span>
+                  <span>Post-launch support and maintenance</span>
                 </li>
               </ul>
-              <Link href="/services#permanent-placement">
+              <Link href="/services#software-development">
+                <Button variant="outline">
+                  Learn More
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+
+            <div className="border rounded-lg p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-bold mb-4">Training</h3>
+              <p className="text-muted-foreground mb-4">
+                Comprehensive training programs for software professionals to
+                enhance their skills and stay updated with the latest
+                technologies.
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Customized training modules</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Hands-on workshops</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Certification programs</span>
+                </li>
+              </ul>
+              <Link href="/services#training">
                 <Button variant="outline">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -256,6 +291,7 @@ export default function Home() {
             title="Client Testimonials"
             subtitle="Hear what our clients have to say about our staffing solutions."
             centered
+            className="flex flex-col items-center"
           />
 
           <div className="mt-12 max-w-4xl mx-auto">

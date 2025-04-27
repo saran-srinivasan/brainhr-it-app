@@ -186,23 +186,14 @@ export default function ContactPageClient() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold mb-1">Our Offices</h3>
-                    <p className="text-muted-foreground mb-2">Headquarters:</p>
+                    <p className="fw-700 mt-2">Corporate Office:</p>
                     <p className="text-muted-foreground">
-                      123 Tech Park, Whitefield
-                      <br />
-                      Bangalore, Karnataka 560066
-                      <br />
-                      India
+                      33 Wood Avenue South, Suite 100, Iselin NJ, 08830, United
+                      States
                     </p>
-                    <p className="text-muted-foreground mt-4 mb-2">
-                      US Office:
-                    </p>
+                    <p className="fw-700 mt-2">Development Center:</p>
                     <p className="text-muted-foreground">
-                      555 Market Street, Suite 1000
-                      <br />
-                      San Francisco, CA 94105
-                      <br />
-                      United States
+                      Inman Ave Suite 202D, Colonia, NJ 07067, United States
                     </p>
                   </div>
                 </div>
@@ -214,10 +205,10 @@ export default function ContactPageClient() {
                   <div>
                     <h3 className="text-lg font-bold mb-1">Phone</h3>
                     <p className="text-muted-foreground mb-2">
-                      India: +91 98765 43210
+                      USA: +1 (201) 203-5406
                     </p>
                     <p className="text-muted-foreground">
-                      US: +1 (555) 987-6543
+                      USA: +1 (201) 203-5402
                     </p>
                   </div>
                 </div>
@@ -229,30 +220,11 @@ export default function ContactPageClient() {
                   <div>
                     <h3 className="text-lg font-bold mb-1">Email</h3>
                     <p className="text-muted-foreground mb-2">
-                      General Inquiries:{" "}
                       <a
-                        href="mailto:info@brainhritsolutions.com"
+                        href="mailto:hr@brainhritsolutions.com"
                         className="text-primary hover:underline"
                       >
-                        info@brainhritsolutions.com
-                      </a>
-                    </p>
-                    <p className="text-muted-foreground mb-2">
-                      Careers:{" "}
-                      <a
-                        href="mailto:careers@brainhritsolutions.com"
-                        className="text-primary hover:underline"
-                      >
-                        careers@brainhritsolutions.com
-                      </a>
-                    </p>
-                    <p className="text-muted-foreground">
-                      Support:{" "}
-                      <a
-                        href="mailto:support@brainhritsolutions.com"
-                        className="text-primary hover:underline"
-                      >
-                        support@brainhritsolutions.com
+                        hr@brainhritsolutions.com
                       </a>
                     </p>
                   </div>
@@ -266,7 +238,7 @@ export default function ContactPageClient() {
                     <h3 className="text-lg font-bold mb-1">Connect With Us</h3>
                     <div className="flex space-x-4 mt-2">
                       <Link
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/company/brainhr-it-solutions/"
                         className="text-muted-foreground hover:text-primary transition-colors"
                         aria-label="LinkedIn"
                       >
@@ -300,7 +272,7 @@ export default function ContactPageClient() {
 
               <div className="mt-12 h-80 rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9932936675053!2d77.7408!3d12.9792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzQ1LjEiTiA3N8KwNDQnMjYuOSJF!5e0!3m2!1sen!2sin!4v1625671234567!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6061.879023832607!2d-74.328803!3d40.565013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b662198e7da7%3A0xd8e151beaac19386!2sBrainHR%20IT%20Solutions!5e0!3m2!1sen!2sus!4v1745733936225!5m2!1sen!2sus"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

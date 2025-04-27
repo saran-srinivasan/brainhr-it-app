@@ -51,28 +51,38 @@ export default function CompanyPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <SectionHeading
-                title="Our Story"
+                title="About us"
                 subtitle="How BrainHR IT Solutions came to be a leader in software staffing solutions."
               />
 
               <div className="space-y-4 mt-6">
                 <p>
-                  Founded in 2015, BrainHR IT Solutions was born out of a vision
-                  to transform how software companies connect with exceptional
-                  talent. Our founder, Priya Sharma, recognized a significant
-                  gap in the market: prestigious software companies were
-                  struggling to find qualified professionals who not only had
-                  the technical skills but also aligned with their company
-                  culture and values.
+                  We take the pleasure to introduce ourselves to you as a
+                  leading Software consultancy firm catering to the Staffing
+                  needs of various prestigious software companies in INDIA, and
+                  a few reputed overseas clients within US.
                 </p>
                 <p>
-                  Starting with a small team of experienced recruiters, BrainHR
-                  IT Solutions quickly gained a reputation for its thorough
-                  understanding of technical roles and its ability to identify
-                  candidates who were perfect matches for their clients. As word
-                  spread about our success, we expanded our operations from
-                  Bangalore to include offices in Mumbai, Delhi, and San
-                  Francisco.
+                  Our Expertise Our network of strong channel partners
+                  throughout that places us in a comfortable position to provide
+                  skilled professionals from any part/region on any IT
+                  environment. The databank that has grown over years (with
+                  referrals from the employees placed) gives us a verified list
+                  of software professionals, each having 5-25 years of skilled
+                  IT experience with the desired educational background.
+                </p>
+                <p>
+                  Your Advantage Our teams of expert technical consultants
+                  ensure a first level scrutiny of the professionals we propose,
+                  before they are put forth to different client companies. This
+                  ensures that our clients experience an unmatched quality
+                  standard putting BITS a step ahead of competition. BITS has
+                  been a leading partner in many IT companies across US as their
+                  strategic IT consultant. From our first placement onsite, our
+                  databank has grown with profiles of professionals with rich
+                  overseas exposure on different IT environments. Each
+                  professional you meet through us have with them a minimum of
+                  4-5 years of industry experience.
                 </p>
                 <p>
                   Today, BrainHR IT Solutions is proud to serve some of the most

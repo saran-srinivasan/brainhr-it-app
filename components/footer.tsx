@@ -39,7 +39,7 @@ export function Footer() {
                 <Twitter size={20} />
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/brainhr-it-solutions/"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="LinkedIn"
               >
