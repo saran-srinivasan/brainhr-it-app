@@ -85,10 +85,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/careers"
+                  href="/jobs"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Careers
+                  Jobs
                 </Link>
               </li>
               <li>
@@ -138,19 +138,20 @@ export function Footer() {
             <h3 className="font-heading text-lg font-semibold">Contact Us</h3>
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
-                <MapPin size={16} className="text-primary" />
+                <MapPin className="text-primary" />
                 <span className="text-muted-foreground">
-                  123 Tech Park, Bangalore, India
+                  Corporate Office: 33 Wood Avenue South, Suite 100, Iselin
+                  NJ-08830
                 </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={16} className="text-primary" />
-                <span className="text-muted-foreground">+91 98765 43210</span>
+                <span className="text-muted-foreground">+1 (201) 203-5406</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={16} className="text-primary" />
                 <span className="text-muted-foreground">
-                  info@brainhritsolutions.com
+                  hr@brainhritsolutions.com
                 </span>
               </li>
             </ul>

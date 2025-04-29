@@ -12,27 +12,21 @@ export const metadata: Metadata = {
 
 const teamMembers = [
   {
-    name: "Priya Sharma",
+    name: "name",
     role: "Founder & CEO",
-    bio: "With over 15 years of experience in the tech industry, Priya founded BrainHR IT Solutions to bridge the gap between exceptional talent and leading software companies.",
+    bio: "bio",
     image: "/placeholder.svg?height=300&width=300",
   },
   {
-    name: "David Chen",
-    role: "Chief Operating Officer",
-    bio: "David oversees the day-to-day operations of BrainHR IT Solutions, ensuring that our processes are efficient and our clients receive exceptional service.",
+    name: "name 2",
+    role: "VP",
+    bio: "bio",
     image: "/placeholder.svg?height=300&width=300",
   },
   {
-    name: "Arun Patel",
-    role: "VP of Recruitment",
-    bio: "Arun leads our recruitment team, developing innovative strategies to identify and attract top-tier talent for our clients.",
-    image: "/placeholder.svg?height=300&width=300",
-  },
-  {
-    name: "Sarah Johnson",
-    role: "Director of Client Relations",
-    bio: "Sarah works closely with our clients to understand their unique needs and ensure that we deliver staffing solutions that exceed their expectations.",
+    name: "name 3",
+    role: "Director",
+    bio: "bio",
     image: "/placeholder.svg?height=300&width=300",
   },
 ];
@@ -89,7 +83,7 @@ export default function CompanyPage() {
                   innovative and respected software companies in both India and
                   the United States. Our growth is a testament to our unwavering
                   commitment to excellence and our deep understanding of the
-                  software industry&aposs unique staffing needs.
+                  software industry&apos;s unique staffing needs.
                 </p>
               </div>
             </div>
@@ -123,11 +117,7 @@ export default function CompanyPage() {
                 <Target className="h-12 w-12 text-primary" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <p className="text-lg">
-                To connect exceptional talent with prestigious software
-                companies, creating meaningful partnerships that drive
-                innovation and success for all parties involved.
-              </p>
+              <p className="text-lg">!!! Insert mission !!!</p>
             </div>
           </div>
 
@@ -136,10 +126,9 @@ export default function CompanyPage() {
               <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
                 <Heart className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Integrity</h3>
+              <h3 className="text-xl font-bold mb-2">Mission 1</h3>
               <p className="text-muted-foreground">
-                We operate with honesty and transparency in all our
-                interactions, building trust with both clients and candidates.
+                Mission 1 statement goes here.
               </p>
             </div>
 
@@ -147,10 +136,9 @@ export default function CompanyPage() {
               <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
                 <Zap className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Excellence</h3>
+              <h3 className="text-xl font-bold mb-2">Mission 2</h3>
               <p className="text-muted-foreground">
-                We are committed to delivering exceptional service and results
-                that exceed expectations at every touchpoint.
+                Mission 2 statement goes here.
               </p>
             </div>
 
@@ -158,10 +146,9 @@ export default function CompanyPage() {
               <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
                 <CheckCircle className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Partnership</h3>
+              <h3 className="text-xl font-bold mb-2">Mission 3</h3>
               <p className="text-muted-foreground">
-                We build long-term relationships with our clients and
-                candidates, focusing on mutual success and growth.
+                Mission 3 statement goes here.
               </p>
             </div>
           </div>
@@ -231,7 +218,7 @@ export default function CompanyPage() {
                 <h3 className="text-lg font-bold mb-2">Technical Expertise</h3>
                 <p className="text-muted-foreground">
                   Our recruiters have technical backgrounds, enabling them to
-                  effectively evaluate candidates&apos skills and match them to
+                  effectively evaluate candidates&apos; skills and match them to
                   appropriate roles.
                 </p>
               </div>

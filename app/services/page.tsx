@@ -1,13 +1,23 @@
-import type { Metadata } from "next"
-import { HeroSection } from "@/components/hero-section"
-import { SectionHeading } from "@/components/section-heading"
-import { ServiceTabs } from "@/components/service-tabs"
-import { Users, UserPlus, Search, Briefcase, Code, Database, Server, Globe } from "lucide-react"
+import type { Metadata } from "next";
+import { HeroSection } from "@/components/hero-section";
+import { SectionHeading } from "@/components/section-heading";
+import { ServiceTabs } from "@/components/service-tabs";
+import {
+  Users,
+  UserPlus,
+  Search,
+  Briefcase,
+  Code,
+  Database,
+  Server,
+  Globe,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Explore our comprehensive staffing solutions for prestigious software companies in India and the US.",
-}
+  description:
+    "Explore our comprehensive staffing solutions for prestigious software companies in India and the US.",
+};
 
 const services = [
   {
@@ -94,7 +104,7 @@ const services = [
         "The team successfully developed and launched the company's first blockchain-based product, establishing them as innovators in their industry.",
     },
   },
-]
+];
 
 const technologies = [
   {
@@ -153,7 +163,38 @@ const technologies = [
     ],
     icon: <Globe className="h-6 w-6" />,
   },
-]
+];
+
+const training = [
+  {
+    id: "training",
+    title: "Training & Development",
+    description:
+      "Customized training programs to upskill your existing workforce in the latest technologies and methodologies.",
+    features: [
+      "Tailored training programs for specific technologies",
+      "Hands-on workshops and real-world projects",
+      "Mentorship from industry experts",
+      "Ongoing support and resources post-training",
+      "Assessment and certification options available",
+    ],
+    icon: <Users className="h-6 w-6" />,
+  },
+  {
+    id: "mentorship",
+    title: "Mentorship & Coaching",
+    description:
+      "One-on-one mentorship and coaching for your team members to enhance their skills and career growth.",
+    features: [
+      "Personalized mentorship plans",
+      "Regular feedback and progress tracking",
+      "Access to a network of industry professionals",
+      "Career development resources and tools",
+      "Support for both technical and soft skills enhancement",
+    ],
+    icon: <UserPlus className="h-6 w-6" />,
+  },
+];
 
 export default function ServicesPage() {
   return (
@@ -188,6 +229,18 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <SectionHeading
+            title="Training & Development"
+            subtitle="Empowering your team with the skills they need to succeed."
+          />
+
+          <div className="mt-12">
+            <ServiceTabs services={training} />
+          </div>
+        </div>
+      </section>
 
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -204,7 +257,8 @@ export default function ServicesPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Requirements Analysis</h3>
               <p className="text-muted-foreground">
-                We work closely with you to understand your technical requirements, company culture, and specific needs.
+                We work closely with you to understand your technical
+                requirements, company culture, and specific needs.
               </p>
             </div>
 
@@ -214,7 +268,8 @@ export default function ServicesPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Talent Sourcing</h3>
               <p className="text-muted-foreground">
-                Our specialized recruiters identify and engage with qualified candidates from our extensive network.
+                Our specialized recruiters identify and engage with qualified
+                candidates from our extensive network.
               </p>
             </div>
 
@@ -224,7 +279,8 @@ export default function ServicesPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Rigorous Screening</h3>
               <p className="text-muted-foreground">
-                Candidates undergo thorough technical assessments, interviews, and background checks to ensure quality.
+                Candidates undergo thorough technical assessments, interviews,
+                and background checks to ensure quality.
               </p>
             </div>
 
@@ -234,12 +290,13 @@ export default function ServicesPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Placement & Support</h3>
               <p className="text-muted-foreground">
-                We facilitate the hiring process and provide ongoing support to ensure a successful engagement.
+                We facilitate the hiring process and provide ongoing support to
+                ensure a successful engagement.
               </p>
             </div>
           </div>
         </div>
       </section>
     </>
-  )
+  );
 }

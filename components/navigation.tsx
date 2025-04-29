@@ -23,8 +23,8 @@ const routes = [
     label: "Company",
   },
   {
-    href: "/careers",
-    label: "Careers",
+    href: "/jobs",
+    label: "jobs",
   },
   {
     href: "/contact",

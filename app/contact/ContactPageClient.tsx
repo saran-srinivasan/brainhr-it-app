@@ -164,7 +164,7 @@ export default function ContactPageClient() {
                     <div className="mt-6 p-4 bg-green-50 text-green-700 rounded-md flex items-center">
                       <CheckCircle className="h-5 w-5 mr-2" />
                       <p>
-                        Thank you for your message! We&aposll get back to you
+                        Thank you for your message! We&apos;ll get back to you
                         shortly.
                       </p>
                     </div>

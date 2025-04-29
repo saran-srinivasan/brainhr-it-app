@@ -17,27 +17,11 @@ import {
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    company: "TechGiant Inc.",
+    name: "John Doe",
+    company: "ABC Inc.",
     role: "CTO",
     quote:
       "BrainHR IT Solutions has been instrumental in helping us build our engineering team. Their understanding of our technical requirements and company culture allowed them to find perfect matches for our open positions.",
-  },
-  {
-    id: 2,
-    name: "Rajesh Patel",
-    company: "InnovateNow",
-    role: "VP of Engineering",
-    quote:
-      "We've worked with several staffing firms in the past, but none have delivered the quality of candidates that BrainHR IT Solutions has. Their screening process is thorough and they only send candidates who are truly qualified.",
-  },
-  {
-    id: 3,
-    name: "Michael Chen",
-    company: "DataSphere",
-    role: "Director of HR",
-    quote:
-      "The team at BrainHR IT Solutions understands the unique challenges of hiring in the tech industry. They've consistently provided us with top-tier talent that has helped drive our company forward.",
   },
 ];
 
@@ -62,7 +46,7 @@ export default function Home() {
             size="lg"
             className="text-base py-6 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all"
           >
-            <Link href="/careers" className="flex items-center">
+            <Link href="/jobs" className="flex items-center">
               <User className="mr-2 h-5 w-5" />
               Find Your Dream Role
             </Link>
@@ -331,8 +315,8 @@ export default function Home() {
             Ready to Find Your Perfect Match?
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
-            Whether you&aposre looking for top talent or your next career
-            opportunity, we&aposre here to help.
+            Whether you are looking for top talent or your next career
+            opportunity, we are here to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
@@ -347,7 +331,7 @@ export default function Home() {
               variant="outline"
               className="bg-white/10 hover:bg-white/20 text-white border-white/20"
             >
-              <Link href="/careers">View Open Positions</Link>
+              <Link href="/jobs">View Open Positions</Link>
             </Button>
           </div>
         </div>

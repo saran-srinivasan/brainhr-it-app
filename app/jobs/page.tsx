@@ -23,112 +23,21 @@ import {
   Coffee,
 } from "lucide-react";
 
+import { JobOpening, jobOpenings } from "./jobsDataJson";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 export const metadata: Metadata = {
-  title: "Careers",
+  title: "jobs",
   description:
-    "Explore career opportunities at BrainHR IT Solutions and join our team of staffing professionals.",
+    "Explore job opportunities at BrainHR IT Solutions and join our team of staffing professionals.",
 };
 
-const jobOpenings = [
-  {
-    id: 1,
-    title: "Senior Technical Recruiter",
-    location: "Bangalore, India",
-    type: "Full-time",
-    category: "recruiting",
-    salary: "₹15-20 LPA",
-    description:
-      "We are looking for an experienced Technical Recruiter to join our team in Bangalore. The ideal candidate will have a strong understanding of technical roles and the ability to identify and attract top talent.",
-    responsibilities: [
-      "Source and screen candidates for technical roles",
-      "Conduct initial interviews and technical assessments",
-      "Build and maintain relationships with candidates",
-      "Work closely with clients to understand their requirements",
-      "Provide regular updates to clients and candidates",
-    ],
-    requirements: [
-      "5+ years of experience in technical recruiting",
-      "Strong understanding of software development roles and technologies",
-      "Excellent communication and interpersonal skills",
-      "Experience with applicant tracking systems",
-      "Bachelor's degree in HR, Computer Science, or related field",
-    ],
-  },
-  {
-    id: 2,
-    title: "Client Relationship Manager",
-    location: "Mumbai, India",
-    type: "Full-time",
-    category: "sales",
-    salary: "₹18-25 LPA",
-    description:
-      "We are seeking a Client Relationship Manager to build and maintain relationships with our clients in the software industry. The ideal candidate will have a strong background in account management and a passion for delivering exceptional service.",
-    responsibilities: [
-      "Develop and maintain relationships with key clients",
-      "Understand clients' staffing needs and provide tailored solutions",
-      "Collaborate with the recruitment team to fulfill client requirements",
-      "Negotiate contracts and service level agreements",
-      "Monitor client satisfaction and address any concerns",
-    ],
-    requirements: [
-      "7+ years of experience in account management or client relations",
-      "Experience in the staffing industry, preferably in IT/software",
-      "Strong negotiation and relationship-building skills",
-      "Excellent communication and presentation abilities",
-      "Bachelor's degree in Business, Marketing, or related field",
-    ],
-  },
-  {
-    id: 3,
-    title: "Technical Sourcing Specialist",
-    location: "Remote, India",
-    type: "Full-time",
-    category: "recruiting",
-    salary: "₹10-15 LPA",
-    description:
-      "We are looking for a Technical Sourcing Specialist to identify and engage with potential candidates for our clients' technical roles. The ideal candidate will be skilled in various sourcing techniques and have a good understanding of technical positions.",
-    responsibilities: [
-      "Utilize various sourcing channels to identify potential candidates",
-      "Conduct initial outreach and engagement with candidates",
-      "Screen resumes and profiles for technical qualifications",
-      "Maintain a pipeline of qualified candidates for current and future roles",
-      "Stay updated on industry trends and sourcing best practices",
-    ],
-    requirements: [
-      "3+ years of experience in technical sourcing or recruiting",
-      "Proficiency with LinkedIn Recruiter, GitHub, and other sourcing tools",
-      "Understanding of software development roles and technologies",
-      "Excellent research and communication skills",
-      "Bachelor's degree in any field",
-    ],
-  },
-  {
-    id: 4,
-    title: "Business Development Manager",
-    location: "San Francisco, USA",
-    type: "Full-time",
-    category: "sales",
-    salary: "$90K-120K",
-    description:
-      "We are seeking a Business Development Manager to expand our client base in the US market. The ideal candidate will have a strong network in the software industry and a proven track record of business development success.",
-    responsibilities: [
-      "Identify and pursue new business opportunities with software companies",
-      "Develop and implement business development strategies",
-      "Build and maintain relationships with potential and existing clients",
-      "Negotiate contracts and service agreements",
-      "Collaborate with the recruitment team to ensure client satisfaction",
-    ],
-    requirements: [
-      "5+ years of experience in business development or sales",
-      "Experience in the staffing industry, preferably in IT/software",
-      "Strong network in the US software industry",
-      "Excellent negotiation and relationship-building skills",
-      "Bachelor's degree in Business, Marketing, or related field",
-    ],
-  },
-];
-
-export default function CareersPage() {
+export default function JobPage() {
   return (
     <>
       <HeroSection
@@ -164,7 +73,7 @@ export default function CareersPage() {
               <h3 className="text-xl font-bold mb-2">Collaborative Spirit</h3>
               <p className="text-muted-foreground">
                 We believe in the power of teamwork and foster a collaborative
-                environment where everyone&aposs ideas and contributions are
+                environment where everyone&apos;s ideas and contributions are
                 valued.
               </p>
             </div>
@@ -309,41 +218,23 @@ export default function CareersPage() {
             <Tabs defaultValue="all" className="w-full">
               <TabsList className="grid grid-cols-3 max-w-md mx-auto mb-8">
                 <TabsTrigger value="all">All Positions</TabsTrigger>
-                <TabsTrigger value="recruiting">Recruiting</TabsTrigger>
-                <TabsTrigger value="sales">Sales & Business</TabsTrigger>
               </TabsList>
 
-              <TabsContent value="all" className="space-y-6">
-                {jobOpenings.map((job) => (
+              <TabsContent value="all" className="space-y-6 ">
+                {jobOpenings?.map((job) => (
                   <JobCard key={job.id} job={job} />
                 ))}
-              </TabsContent>
-
-              <TabsContent value="recruiting" className="space-y-6">
-                {jobOpenings
-                  .filter((job) => job.category === "recruiting")
-                  .map((job) => (
-                    <JobCard key={job.id} job={job} />
-                  ))}
-              </TabsContent>
-
-              <TabsContent value="sales" className="space-y-6">
-                {jobOpenings
-                  .filter((job) => job.category === "sales")
-                  .map((job) => (
-                    <JobCard key={job.id} job={job} />
-                  ))}
               </TabsContent>
             </Tabs>
           </div>
         </div>
       </section>
 
-      {/* Employee Testimonials */}
+      {/* Testimonials */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <SectionHeading
-            title="Employee Testimonials"
+            title="Testimonials"
             subtitle="Hear what our team members have to say about working at BrainHR IT Solutions."
             centered
           />
@@ -356,19 +247,16 @@ export default function CareersPage() {
                     <span className="text-primary font-bold">R</span>
                   </div>
                   <div>
-                    <CardTitle className="text-lg">Rahul Mehta</CardTitle>
-                    <CardDescription>
-                      Senior Technical Recruiter
-                    </CardDescription>
+                    <CardTitle className="text-lg">Person 1</CardTitle>
+                    <CardDescription>Role</CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Working at BrainHR IT Solutions has been the highlight of my
-                  career. The collaborative environment, opportunities for
-                  growth, and the satisfaction of connecting great talent with
-                  amazing companies make every day rewarding.
+                  BrainHR IT Solutions helped me find my dream job. The team was
+                  incredibly supportive and guided me through every step of the
+                  process. I couldn&apos;t have asked for a better experience!
                 </p>
               </CardContent>
             </Card>
@@ -380,19 +268,16 @@ export default function CareersPage() {
                     <span className="text-primary font-bold">A</span>
                   </div>
                   <div>
-                    <CardTitle className="text-lg">Ananya Desai</CardTitle>
-                    <CardDescription>
-                      Client Relationship Manager
-                    </CardDescription>
+                    <CardTitle className="text-lg">Person 1</CardTitle>
+                    <CardDescription>Role</CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  The leadership team at BrainHR IT Solutions truly values
-                  work-life balance and professional development. I have been
-                  able to grow my skills while maintaining a healthy balance,
-                  which is rare in the fast-paced staffing industry.
+                  Working at BrainHR IT Solutions has been a game-changer for my
+                  career. The company culture is fantastic, and I feel supported
+                  in my professional growth every day.
                 </p>
               </CardContent>
             </Card>
@@ -404,19 +289,16 @@ export default function CareersPage() {
                     <span className="text-primary font-bold">J</span>
                   </div>
                   <div>
-                    <CardTitle className="text-lg">Jason Kim</CardTitle>
-                    <CardDescription>
-                      Business Development Manager
-                    </CardDescription>
+                    <CardTitle className="text-lg">Person 3</CardTitle>
+                    <CardDescription>Role</CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  The culture at BrainHR IT Solutions is unlike any other
-                  company I&aposve worked for. There&aposs a genuine commitment
-                  to excellence and integrity in everything we do, and it&aposs
-                  reflected in our relationships with clients and candidates.
+                  I am grateful to BrainHR IT Solutions for connecting me with
+                  such a prestigious company. The team was professional and
+                  attentive, making the entire process smooth and enjoyable.
                 </p>
               </CardContent>
             </Card>
@@ -504,80 +386,63 @@ export default function CareersPage() {
 }
 
 interface JobCardProps {
-  job: {
-    id: number;
-    title: string;
-    location: string;
-    type: string;
-    category: string;
-    salary: string;
-    description: string;
-    responsibilities: string[];
-    requirements: string[];
-  };
+  key: number;
+  job: JobOpening;
 }
 
 function JobCard({ job }: JobCardProps) {
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>{job.title}</CardTitle>
-        <CardDescription>
-          <div className="flex flex-wrap gap-4 mt-2">
-            <div className="flex items-center text-sm">
-              <MapPin className="h-4 w-4 mr-1 text-muted-foreground" />
-              {job.location}
-            </div>
-            <div className="flex items-center text-sm">
-              <Clock className="h-4 w-4 mr-1 text-muted-foreground" />
-              {job.type}
-            </div>
-            <div className="flex items-center text-sm">
-              <DollarSign className="h-4 w-4 mr-1 text-muted-foreground" />
-              {job.salary}
-            </div>
-            <div className="flex items-center text-sm">
-              <Briefcase className="h-4 w-4 mr-1 text-muted-foreground" />
-              {job.category === "recruiting"
-                ? "Recruiting"
-                : "Sales & Business"}
-            </div>
+    <Accordion type="single" collapsible className="w-full">
+      <AccordionItem value={`job-${job.id}`}>
+        <AccordionTrigger>
+          <div className="flex items-center justify-between p-4">
+            <span className="font-semibold">{job.title}</span>
+            <span className="font-extralight from-neutral-600 text-muted-foreground ml-4">
+              {job.locations.join(", ")}
+            </span>
           </div>
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="space-y-4">
-        <p className="text-muted-foreground">{job.description}</p>
+        </AccordionTrigger>
+        <AccordionContent>
+          {job.introduction && (
+            <p className="text-muted-foreground mb-4">{job.introduction}</p>
+          )}
 
-        <div>
-          <h4 className="font-semibold mb-2">Responsibilities:</h4>
-          <ul className="list-disc pl-5 space-y-1">
-            {job.responsibilities.map((responsibility, index) => (
-              <li key={index} className="text-sm text-muted-foreground">
-                {responsibility}
-              </li>
-            ))}
-          </ul>
-        </div>
+          <div>
+            <h4 className="font-semibold mb-2">Responsibilities:</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              {job.jobDescription.keyResponsibilities.map(
+                (responsibility, index) => (
+                  <li key={index} className="text-sm text-muted-foreground">
+                    {responsibility}
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
 
-        <div>
-          <h4 className="font-semibold mb-2">Requirements:</h4>
-          <ul className="list-disc pl-5 space-y-1">
-            {job.requirements.map((requirement, index) => (
-              <li key={index} className="text-sm text-muted-foreground">
-                {requirement}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </CardContent>
-      <CardFooter>
-        <Button asChild>
-          <Link href={`/careers/apply/${job.id}`}>
-            Apply Now
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
-      </CardFooter>
-    </Card>
+          {job.requiredSkills && (
+            <div className="mt-4">
+              <h4 className="font-semibold mb-2">Required Skills:</h4>
+              <ul className="list-disc pl-5 space-y-1">
+                {job.requiredSkills.map((skill, index) => (
+                  <li key={index} className="text-sm text-muted-foreground">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div className="mt-4">
+            <Button asChild>
+              <Link href={`/jobs/apply/${job.id}`}>
+                Apply Now
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
   );
 }
